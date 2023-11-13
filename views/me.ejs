@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/me.css">
+  </head>
+  <body>
+    <div id="container">
+      <div id="image-container">
+        <img
+          src="https://i.postimg.cc/c6yvM7C9/e8be7e761d74fb27f5182371920c014d-removebg-preview.png"
+          alt=""
+          class="image"
+        />
+      </div>
+      <div class="item">
+        <div class="ball"></div>
+      </div>
+      <div class="item">
+        <div class="ball"></div>
+      </div>
+      <div class="item">
+        <div class="ball"></div>
+      </div>
+      <div class="item">
+        <div class="ball"></div>
+      </div>
+      <div class="item">
+        <div class="ball"></div>
+      </div>
+      <div class="item">
+        <div class="ball"></div>
+      </div>
+      <div class="item">
+        <div class="ball"></div>
+      </div>
+      <div class="item">
+        <div class="ball"></div>
+      </div>
+      <div class="item">
+        <div class="ball"></div>
+      </div>
+      <div class="item">
+        <div class="ball"></div>
+      </div>
+      <div class="item">
+        <div class="ball"></div>
+      </div>
+      <div class="item">
+        <div class="ball"></div>
+      </div>
+    </div>
+    <script>
+      const items = document.querySelectorAll(".item");
+      const drums = document.querySelectorAll(".ball");
+      items.forEach((item, index) => {
+        let angle = (index + 1) * 30;
+        setInterval(function () {
+          item.style.transform = `translateX(50%) rotate(${angle}deg)`;
+          drums.forEach((drum) => {
+            drum.style.transform = `rotate(${angle / 7}deg)`;
+          });
+          angle = angle + 10;
+        }, 500);
+      });
+    </script>
+  </body>
+</html>
