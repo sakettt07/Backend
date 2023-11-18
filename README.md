@@ -28,5 +28,8 @@ Day-3 ✅
 
 Practice some of the basics of nodejs-->
 Listing the topics:
-1.Local Modules(require,exports)
+1.Local Modules(require,exports,module.exports,ES modules).
+2.Built in modules 
+    1.OS module(type,userinfo,freemem....etc);
+    2.path module(join,resolve,basename,filename,dirname.....etc);
 
