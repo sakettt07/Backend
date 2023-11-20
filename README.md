@@ -32,4 +32,5 @@ Listing the topics:
 2.Built in modules 
     1.OS module(type,userinfo,freemem....etc);
     2.path module(join,resolve,basename,filename,dirname.....etc);
+    3.fs module(write,read)
 

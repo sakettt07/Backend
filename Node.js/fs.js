@@ -10,8 +10,24 @@ const fs=require('fs');
 // });
 
 // the above commented method is a async type of method
-const fileContent=fs.readFileSync('file.txt','utf8');
-console.log(fileContent);
+
+
+// for synchronous
+// const fileContent=fs.readFileSync('file.txt','utf8');
+// console.log(fileContent);
 
 
 // Now we will be performing the write function into the file.
+
+
+// fs.writeFile('text.txt','hello this is test file for the fs module',(err)=>{
+//     if(err){
+//         console.error(err);
+//         return;
+//     }
+//     console.log('File written');
+// })
+
+// the method of writting a file is a asynchrounous one;
+fs.writeFileSync('text2.txt','this is the file 2 for the testing','utf-8');
+console.log("file written succesfully");
