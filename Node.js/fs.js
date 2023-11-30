@@ -53,7 +53,7 @@ fs.mkdir('new-directory',(err)=>{
     console.log("directory created");
 })
 
-// to the directory
+// to remove the directory
 fs.rmdir('new-directory',(err)=>{
     if(err){
         console.log(err);
